@@ -23,6 +23,33 @@
 <p style="color:#ddd;">테스트페이지입니다</p>
 <hr>
 <?php
+echo "문자 내장함수 <hr>";
+
+$var1 = 1;
+$var2 = 2;
+
+var_dump(strcmp($var1, $var2));
+echo "<br>";
+
+if(strcmp($var1, $var2) !== 0){
+  echo "$var1 is not equal to $var2";
+} 
+
+echo '<hr>';
+
+$str = "hello hello";
+if(strstr($str, 'H')){echo '있다';} else { echo '없다';}
+echo '<br>';
+if(strchr($str, 'e')){echo '있다';} else { echo '없다';}
+echo '<hr>';
+
+$strposTest = 'abcde';
+if(strpos($strposTest, 'c') !== false){
+  echo "X";
+}
+if(strpos($strposTest, 'df') === false ){
+ echo "O";
+}
 
 ?>
 </body>
