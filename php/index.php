@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1. 내장함수(배열관련)</title>
+  <title>테스트페이지입니다.</title>
   <style>
     table{
       border:1px solid grey;
@@ -23,6 +23,8 @@
 <p style="color:#ddd;">테스트페이지입니다</p>
 <hr>
 <?php
+
+echo "hi";
 
 ?>
 </body>

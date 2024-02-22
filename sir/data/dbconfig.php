@@ -8,7 +8,7 @@ define('G5_MYSQL_SET_MODE', true);
 
 define('G5_TABLE_PREFIX', 'g5_');
 
-define('G5_TOKEN_ENCRYPTION_KEY', '8ed88cdd092bb273f32ca28c6d2cc8a8'); // 토큰 암호화에 사용할 키
+define('G5_TOKEN_ENCRYPTION_KEY', 'b6aedb59a1bc84d419e504cabae6a91d'); // 토큰 암호화에 사용할 키
 
 $g5['write_prefix'] = G5_TABLE_PREFIX.'write_'; // 게시판 테이블명 접두사
 

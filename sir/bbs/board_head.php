@@ -17,3 +17,13 @@ if (G5_IS_MOBILE) {
     }
     echo run_replace('board_content_head', html_purifier(stripslashes($board['bo_content_head'])), $board);
 }
+
+?>
+<div style =" display: flex;
+    align-items: center;
+    justify-content: center;margin-top:56px;height:200px; width:100%; overflow:hidden; background:url('https://www.shutterstock.com/image-illustration/code-html-php-web-programming-260nw-1653624784.jpg'); background-size:cover;">
+        <!-- <img style="width:100%" src="https://www.shutterstock.com/image-illustration/code-html-php-web-programming-260nw-1653624784.jpg"> -->
+    <h1 style="color:white;"><?= $board['bo_subject'] ?></h1>    
+    </div>
+<div class="container">
+    
