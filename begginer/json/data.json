@@ -1,0 +1,23 @@
+[
+  {
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "is_student": false,
+    "grades": [85, 90, 78]
+  },
+  {
+    "name": "Alice",
+    "age": 28,
+    "city": "Los Angeles",
+    "is_student": true,
+    "grades": [92, 88, 95]
+  },
+  {
+    "name": "Bob",
+    "age": 35,
+    "city": "Chicago",
+    "is_student": false,
+    "grades": [75, 80, 82]
+  }
+]
