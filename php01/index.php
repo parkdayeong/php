@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>메인</title>
   <style>
-    table{
-      border:1px solid grey;
-      border-collapse : collapse;
-    }
-    td{
-      border: 1px solid grey;
-    }
+  table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 1px solid grey;
+  }
   </style>
 </head>
+
 <body>
   <p style="color:#ddd;">테스트페이지입니다</p>
   <hr>
 
-<?php
+  <?php
 session_start(); 
 require_once("./config/db_conn.php");
 
@@ -34,7 +37,7 @@ $result = mysqli_query($connect, $sql_query);
 $num = mysqli_num_rows($result);
 
 // 한페이지당 데이터 개수
-$list_num = 5;
+$list_num = 10;
 
 // 한블당 페이지 개수
 $page_num = 3;
@@ -163,27 +166,27 @@ mysqli_close($connect);
 
 ?>
 
-<script>
-
-  function confirmDelete(del_no){
+  <script>
+  function confirmDelete(del_no) {
     let delNum = del_no
     let result = confirm("정말로 " + delNum + " 번 데이터를 삭제하시겠습니까?")
-    if(result) {
-      window.location.href = 'delete_proc.php?del_no='+del_no;
-    }else{
+    if (result) {
+      window.location.href = 'delete_proc.php?del_no=' + del_no;
+    } else {
       return false;
     }
   }
 
 
-function confirmDeleteAll(){
-  let result = confirm("정말로 모든 데이터를 삭제하시겠습니까?");
-  if(result){
-    window.location.href='delete_all.php';
-  }else{
-    return false;
+  function confirmDeleteAll() {
+    let result = confirm("정말로 모든 데이터를 삭제하시겠습니까?");
+    if (result) {
+      window.location.href = 'delete_all.php';
+    } else {
+      return false;
+    }
   }
-}
-</script>
+  </script>
 </body>
+
 </html>

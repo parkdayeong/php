@@ -22,7 +22,8 @@ $result = mysqli_query($connect, $sql_query);
 $row = mysqli_fetch_array($result);
 
 if(!$row['user_id']){
-  echo "정확한 정보가 아닙니다..";
+  echo "정확한 정보가 아닙니다..ㅠ_ㅠ <br>";
+  echo "<a href='index.php'>홈으로</a>";
   exit;
 }
 

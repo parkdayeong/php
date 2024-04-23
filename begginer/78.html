@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아이디 중복 체크 연습</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="user_id" id="user_id" placeholder="아이디를 입력해주세요." />
+      <input type="button" value="중복확인" id="ajax_btn" />
+      <p>
+        <span id="msg">아이디는 대소문자 구분없이 12자 이내로 입력바랍니다.</span>
+      </p>
+    </form>
+
+    <script>
+      const ajaxBtn = document.querySelector('#ajax_btn');
+      ajaxBtn.addEventListener('click', () => {
+        const userId = document.querySelector('#user_id');
+        const spanMsg = document.querySelector('#msg');
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', './78-check_id.php?id' + userId.value, true);
+        // 요청전송
+        xhr.send();
+        // 통신후 작업
+        xhr.onload = () => {
+          //통신성공
+          if (xhr.status == 200) {
+            console.log('통신성공');
+          } else {
+            console.error('상태 코드', xhr.status, '로 요청이 실패했습니다.');
+          }
+        };
+      });
+    </script>
+  </body>
+</html>

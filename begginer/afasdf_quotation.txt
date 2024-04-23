@@ -1,0 +1,8 @@
+Date: afdaf
+Client: afasdf
+Item: adfasf
+Quantity: afdasf
+Unit Price: asfdsaf
+VAT: asdff
+Conditions: afa
+

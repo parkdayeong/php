@@ -1,0 +1,9 @@
+// 데이터베이스 생성 Query
+create database kingchobo;
+create table board(
+  idx integer unsigned not null auto_increment,
+  subject varchar(255) default '' comment '게시물제목',
+  content text comment '게시물내용',
+  rdate datetime,
+  primary key(idx)
+);

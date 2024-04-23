@@ -1,0 +1,16 @@
+Date: adfsaf
+Client: afasf
+Item: adfasf
+Quantity: adfadf
+Unit Price: afsaf
+VAT: adfasf
+Conditions: af
+
+Date: adfsaf
+Client: afasf
+Item: adfasf
+Quantity: adfadf
+Unit Price: afsaf
+VAT: adfasf
+Conditions: af
+

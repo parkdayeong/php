@@ -64,7 +64,7 @@ if( !in_array(end($file_ext), $ext_chk) ){
 }
 // file.jpg 
 
-$sql_query = "insert into members set user_pw='".md5($user_pw)."',user_id='".$user_id."',name='".$name."', age='".$age."', gender='".$gender."',img_path='".$upload_dir."',img_name='".$file_name."', regdate=now()";
+$sql_query = "insert into members set user_pw='".md5($user_pw)."',user_id='".$user_id."',name='".$name."', age='".$age."', gender='".$gender."',img_path='".$upload_dir."',img_name='".$file_name."'";
 $result = mysqli_query($connect, $sql_query);
 
 if($result){
